@@ -1,5 +1,6 @@
 package net.utilcraft;
 
+import net.minecraft.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
@@ -18,7 +19,7 @@ public class Mod_UtilCraft {
 	    //set the in game names	LanguageRegistry.addName(PotatoChip, "Potato Chip");	
 		
 		//tell the game to register the recipe
-		GameRegistry.addSmelting(PotatoChip.itemID, new ItemStack(PotatoChip,1), 1f);
+		GameRegistry.addSmelting(Item.bakedPotato.itemID, new ItemStack(PotatoChip,1), 1f);
 		
 		}
 	    static {
